@@ -1,0 +1,48 @@
+{
+  "name": "awesome-beerbot",
+  "version": "0.0.0",
+  "description": "The @AwesomePaaS Beerbot",
+  "homepage": "http://open-paas.org",
+  "author": {
+    "name": "Christophe Hamerling",
+    "email": "chamerling@linagora.com",
+    "url": "https://chamerling.github.io"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "bin": {
+    "awsm-beerbot": "./bin/awsm-beerbot.js"
+  },
+  "keywords": [
+    "beerbot",
+    "slack",
+    "openpaas",
+    "paas",
+    "bot"
+  ],
+  "repository": "chamerling/awesome-beerbot",
+  "dependencies": {
+    "beerbot": "chamerling/beerbot",
+    "beerbot-giphy": "chamerling/beerbot-giphy",
+    "beerbot-hublin": "chamerling/beerbot-hublin",
+    "beerbot-jira": "chamerling/beerbot-jira",
+    "beerbot-jenkins": "chamerling/beerbot-jenkins",
+    "beerbot-twitter": "chamerling/beerbot-twitterstream",
+  },
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT"
+}
